@@ -1,0 +1,10 @@
+[extension]
+name = Hide Items
+version = core
+enabled_by_default = False
+module = hideitem
+description = This extension allows you to hide Items in a feed, and creates a "Filtered" and a "Hidden" view
+
+[hooks]
+item_list_filters = hideitem:hide_item_view.get_item_list_filters
+item_context_menu = hideitem:hide_item_view.update_item_context_menu
